@@ -1,11 +1,10 @@
 pipeline {
-  agent repo
+  agent any
 
   stages {
     stage ('hey') {
       steps {
         echo "hey, little one"
-        ls -la /etc
       }
     }
   }
